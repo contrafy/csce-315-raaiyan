@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+#navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#navbar a:hover {
+    color: grey;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
