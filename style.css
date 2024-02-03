@@ -69,62 +69,6 @@ main {
     background-color: #a00020;
 }
 
-.timeline {
-    position: relative;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #800000;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timelineItem {
-    padding: 20px;
-    position: relative;
-    width: 50%;
-    left: 50%;
-}
-
-.timelineItem:nth-child(odd) {
-    left: 0;
-}
-
-.timelineContent {
-    padding: 20px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.timelineContent::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 15px 10px 0;
-    border-color: transparent white transparent transparent;
-    top: 50%;
-    right: -15px;
-    transform: translateY(-50%);
-}
-
-.timelineItem:nth-child(odd) .timelineContent::after {
-    left: -15px;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent white;
-}
-
 .date {
     font-style: italic;
     font-size: 0.85em;
@@ -221,16 +165,33 @@ main {
     color: white;
 }
 
-.skillsSection, .workExperience {
-    text-align: center;
-    padding: 20px;
-    margin: auto;
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.skillsGrid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.skillsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.skillsGrid .fullWidthSkillCategory {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    clear: both;
+}
+
+.skillsSection::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .skillCategory {
@@ -240,18 +201,26 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skillCategory h3 {
+.skillsGrid h3 {
     color: #800000;
 }
 
-.skillCategory ul {
+.skillsGrid ul {
     list-style-type: none;
     padding: 0;
 }
 
-.skillCategory ul li {
+.skillsGrid ul li {
     margin-top: 10px;
     font-size: 1.1em;
+}
+
+.resumePDFContainer {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    clear: both;
 }
 
 .socialLink:hover {
@@ -309,3 +278,35 @@ h1 {
 #navbar a:hover, #navbar a:active, #navbar a:focus {
     color: white;
 }
+
+.serviceRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.serviceText {
+    flex: 1;
+    text-align: left;
+}
+
+.serviceImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.serviceRow:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.serviceRow:nth-child(even) {
+    background-color: #f0f0f0;
+    flex-direction: row-reverse;
+}
+
+.services .serviceRow:nth-child(even) .serviceText {
+    text-align: right;
+}
+
