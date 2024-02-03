@@ -21,6 +21,26 @@ main {
     flex-wrap: wrap;
 }
 
+.styleSwitcher {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#styleToggleButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #f4f4f4;
+    background-color: #333;
+    border: 2px solid #f4f4f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#styleToggleButton:hover {
+    background-color: #555;
+}
+
 .welcomeSection h1 {
     margin-bottom: 0.5em;
     color: #4CAF50;

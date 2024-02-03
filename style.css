@@ -18,6 +18,26 @@ main {
     padding: 20px;
 }
 
+.styleSwitcher {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#styleToggleButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#styleToggleButton:hover {
+    background-color: #e7e7e7;
+}
+
 .welcomeSection h1 {
     margin-bottom: 0.5em;
     color: #800000;
