@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
 }
 
@@ -308,5 +308,99 @@ h1 {
 
 .services .serviceRow:nth-child(even) .serviceText {
     text-align: right;
+}
+
+.chat-box {
+    border: 1px solid #ccc; /* Light mode border */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9; /* Light mode background */
+    color: #333; /* Light mode text color */
+}
+
+/* Interactive AI Demos */
+.ai-demo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ai-demo h3 {
+    color: #007BFF;
+}
+
+.ai-demo input, .ai-demo button {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    background-color: #f9f9f9;
+    color: #007BFF;
+    outline: none;
+}
+
+.ai-demo button:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Personal Insights */
+#personal-insights {
+    background: linear-gradient(145deg, #e6e8fa, #e1e5f2);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.chat-link:hover {
+    background-color: #0056b3;
+}
+
+.prompt-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef2f7;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prompt-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.esportsAccomplishments {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.esportsAccomplishments h2 {
+    color: #333;
+}
+.esportsAccomplishments p {
+    color: #666;
 }
 

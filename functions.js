@@ -29,3 +29,10 @@ function applySavedTheme() {
         light_mode();
     }
 }
+
+function generateText() {
+    const inputText = document.getElementById('aiInput').value;
+    // Simulating AI text generation using a simple response for demonstration purposes
+    const simulatedResponse = `This is a simulated response based on the prompt: "${inputText}"`;
+    document.getElementById('generatedText').textContent = simulatedResponse;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of AI</title>
+    <link rel="stylesheet" type="text/css" href="style.css" id="page_style">
+</head>
+<body onload="applySavedTheme()">
+    <script src="functions.js"></script>
+
+    <header>
+        <h1>Ahmad Raaiyan</h1>
+        <div class="headerContent">
+            <img src="headshot.png" class="headerImage">
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="quals.html">Qualifications</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="AI.html">AI-Generated</a></li>
+                        <li><a href="portfolio.html">Technical Portfolio</a></li>
+                    </ul>
+                </nav>
+            <img src="tamu.png" class="headerImage">
+        </div>
+        <div class="styleSwitcher">
+            <button type="button" onclick="button1()" id="styleToggleButton">Switch Styles</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>AI in Everyday Life</h2>
+            <p>Welcome to a journey through the integration of Artificial Intelligence in our daily lives. As a Computer Science student fascinated by the power and potential of AI and machine learning, I've created this space to share insights and demonstrate how these technologies shape our world. From simplifying tasks to solving complex problems, AI's invisible hand is increasingly influential. Here, we'll explore interactive examples that illustrate AI's impact and discuss its future implications. Join me in uncovering the seamless integration of AI into our routines, often in ways we barely notice.</p>
+        </section>
+        
+        <section id="ai-demos">
+            <h2>Interactive AI Demonstrations</h2>
+            <div class="ai-demo">
+                <h3>Text Generator</h3>
+                <p>Experience the magic of AI with our simple text generator. Enter a prompt, and let the AI surprise you with its creativity.</p>
+                <input type="text" id="aiInput" placeholder="Enter your prompt here">
+                <button onclick="generateText()">Generate</button>
+                <p id="generatedText">Your generated text will appear here...</p>
+            </div>
+        </section>
+        
+        <section id="personal-insights">
+            <h2>Personal Insights</h2>
+            <p>The realm of AI is vast and ever-expanding, offering a canvas for creativity and innovation. My journey into AI has taught me the importance of ethical considerations, the potential for transformative change, and the need for continuous learning. As we stand on the brink of AI's next great leap, I believe in leveraging its power responsibly to enhance our lives, protect our privacy, and ensure equitable benefits for all. The future of AI is not just about what we can achieve but how we navigate the challenges it presents to shape a better world for generations to come.</p>
+        </section>
+        
+        <section id="chat-transcript">
+            <h2>Creation Process</h2>
+            <div class="chat-container">
+                <p>Explore the conversation that led to the creation of this page:</p>
+                <a href="https://chat.openai.com/share/2168cb25-b1d9-4665-9cd8-6b0f737717f4" target="_blank" class="chat-link">View Chat Transcript</a>
+
+                <div class="prompt-box">
+                    <p class="prompt-text">Original Prompt: "Generate a creative page that I can add to my personal website as a showcase for a Computer Science student. I have provided you with the skeleton code that I am currently using for the page, the front page for context on the website, as well as the current stylesheets in use. style.css is the "light mode" stylesheet and style2.css is the "dark mode" stylesheet, list any additions/changes that I will need to make in both stylesheets and ensure that your design complements the current theme of the page well. Include as part of the page a section where I can leave a copy of this chat thread to be viewed by page visitors to see this prompt and subsequent messages that went into creating the page. You have complete creative freedom over the content of the page, however maintain a strong professional presence. Consider I already have pages showcasing my personal abilities/skills/portfolio so you will need to think outside the box for page ideas, and the more creative the better. For your first output, I want you to simply give me an outline for the structure of the page, as well as what the HTML code would look like for said structure, remember that I have uploaded AI.html for you which is the current template for the page."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

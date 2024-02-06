@@ -7,10 +7,11 @@ body {
 }
 
 header {
-    text-align: left;
-    background-color: #333;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background-color: #121212;
 }
 
 main {
@@ -155,64 +156,51 @@ main {
     color: white;
 }
 
-.skillsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    color: #121212;
-}
-
 .skillsSection {
     display: grid;
-    grid-template-columns: 1fr;
-}
-
-.skillsGrid .fullWidthSkillCategory {
-    grid-column: 1 / -1;
-    background-color: #fff;
-    color: #121212;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
     padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    border-radius: 5px;
-    width: 100%;
-    clear: both;
 }
 
-.skillsSection::after {
-    content: "";
-    display: table;
-    clear: both;
+
+.skillsSection h2 {
+    grid-column: 1 / -1;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.skillCategory {
-    background-color: #fff;
+.skillCategory, .fullWidthSkillCategory {
+    background-color: #1e1e1e;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #cccccc;
 }
 
-.skillsGrid h3 {
-    color: #800000;
-}
-
-.skillsGrid ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skillsGrid ul li {
-    margin-top: 10px;
-    font-size: 1.1em;
+.fullWidthSkillCategory {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .resumePDFContainer {
-    margin: 20px 0;
-    border: 1px solid #444;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
-    clear: both;
+    grid-column: 2 / 3;
+    width: 100%;
+    max-height: auto;
+    overflow: hidden;
 }
+
+.resumePDFContainer iframe {
+    grid-column: 2 / 3;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
 
 .socialLink:hover {
     opacity: 0.9;
@@ -243,8 +231,9 @@ h1 {
 }
 
 #navbar {
-    background-color: #800000;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 #navbar ul {
@@ -256,18 +245,22 @@ h1 {
 }
 
 #navbar li {
-    margin: 0 15px;
+    padding: 0;
+    margin: 0 10px;
 }
 
 #navbar a {
+    color: #bbb;
     text-decoration: none;
-    color: white;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
-#navbar a:hover, #navbar a:active, #navbar a:focus {
-    color: white;
+#navbar a:hover {
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
 }
 
 .serviceRow {
@@ -310,3 +303,97 @@ h1 {
 .services .serviceRow:nth-child(even) .serviceText {
     text-align: right;
 }
+
+.chat-box {
+    border-color: #666; /* Dark mode border */
+    background-color: #333; /* Dark mode background */
+    color: #ccc; /* Dark mode text color */
+}
+
+/* Interactive AI Demos */
+.ai-demo {
+    background-color: #242424;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.ai-demo h3 {
+    color: #4CAF50;
+}
+
+.ai-demo input, .ai-demo button {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    background-color: #333;
+    color: #4CAF50;
+    outline: none;
+}
+
+.ai-demo button:hover {
+    background-color: #4CAF50;
+    color: #242424;
+    cursor: pointer;
+}
+
+/* Personal Insights */
+#personal-insights {
+    background: linear-gradient(145deg, #2a2d3e, #232528);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.chat-container {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.chat-link:hover {
+    background-color: #1e7e34;
+}
+
+.prompt-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333739;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.1);
+}
+
+.prompt-text {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.esportsAccomplishments {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #ddd;
+}
+.esportsAccomplishments h2 {
+    color: #fff;
+}
+.esportsAccomplishments p {
+    color: #ccc;
+}
+
+
